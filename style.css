@@ -4,6 +4,7 @@
   --bg: #010103;
   --border: 0.1rem solid rgba(255, 255, 255, 0.3);
   font-size: 10px;
+  --text-color: #fff;
 }
 
 * {
@@ -20,7 +21,7 @@
 
 body {
   background: var(--bg);
-  color: #fff;
+  color: var(--text-color);
   font-family: "Poppins", sans-serif;
   font-size: 1.6rem;
 }
@@ -51,7 +52,7 @@ section {
 .navbar a {
   margin: 0 1rem;
   font-size: 1.8rem;
-  color: #fff;
+  color: var(--text-color);
 }
 
 .navbar a:hover {
@@ -67,4 +68,39 @@ section {
 }
 .icons img:hover {
   transform: scale(1.1);
+}
+.btn {
+  background-color: var(--main-color);
+  color: var(--text-color);
+  padding: 1rem 3rem;
+  font-size: 1.7rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  display: inline-block;
+}
+.home-container {
+  background-image: url(./img/home-img.png);
+  background-position: center;
+  background-size: cover;
+}
+.home-container section {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.content {
+  max-width: 60rem;
+}
+.home-container h3 {
+  font-size: 6rem;
+  color: var(--text-color);
+}
+.content p {
+  font-size: 2rem;
+  color: var(--text-color);
+  margin-top: 1rem;
+  font-weight: 100;
+  line-height: 1.8;
+  padding: 1rem 0;
 }
